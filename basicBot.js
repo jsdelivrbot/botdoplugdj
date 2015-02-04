@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("", function (json) {
+        $.get("https://rawgit.com/rafaell320/botdoplugdj/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -182,9 +182,9 @@
         status: false,
         name: "BotBabaca",
         loggedInID: null,
-        scriptLink: "https://raw.githubusercontent.com/rafaell320/botdoplugdj/master/basicBot.js",
+        scriptLink: "https://rawgit.com/rafaell320/botdoplugdj/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://raw.githubusercontent.com/rafaell320/botdoplugdj/master/lang/pt.json",
+        chatLink: "https://rawgit.com/rafaell320/botdoplugdj/master/lang/pt.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -192,7 +192,7 @@
         settings: {
             botName: "BotBabaca",
             language: "portuguese",
-            chatLink: "https://raw.githubusercontent.com/rafaell320/botdoplugdj/master/lang/pt.json",
+            chatLink: "https://rawgit.com/rafaell320/botdoplugdj/master/lang/pt.json",
             maximumAfk: 110,
             afkRemoval: true,
             maximumDc: 60,
@@ -1633,7 +1633,7 @@
                                 return API.sendChat(subChat(basicBot.chat.selfcookie, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+				 return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
                             }
                         }
                     }
@@ -1641,11 +1641,11 @@
             },
 			
 
-baterCommand: {
+		baterCommand: {
                 command: 'bater',
                 rank: 'user',
                 type: 'startsWith',
-                bate: [
+                baters: [
                     'te bateu com um chevette.',
 					'te bateu com uma barra de ferro.',
                     'te bateu uma gloriosa.',
@@ -1655,8 +1655,8 @@ baterCommand: {
 					
                 ],
                 getBater: function () {
-                    var c = Math.floor(Math.random() * this.bate.length);
-                    return this.bate[c];
+                    var c = Math.floor(Math.random() * this.baters.length);
+                    return this.baters[c];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1690,7 +1690,7 @@ chantagearCommand: {
                 command: 'chantagear',
                 rank: 'user',
                 type: 'startsWith',
-                chantagem: [
+                chantagems: [
                     'sabe o que você fez no verão passado.',
 					'disse que vai contar para a sua vó.',
                     'quer 10 reais ou vai espalhar seus nudes.',
@@ -1698,8 +1698,8 @@ chantagearCommand: {
 					
                 ],
                 getChantagear: function () {
-                    var c = Math.floor(Math.random() * this.chantagem.length);
-                    return this.chantagem[c];
+                    var c = Math.floor(Math.random() * this.chantagems.length);
+                    return this.chantagems[c];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1722,7 +1722,7 @@ chantagearCommand: {
                                 return API.sendChat(subChat(basicBot.chat.selfchantagem, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.bater, {nameto: user.username, namefrom: chat.un, chantagear: this.getChantagear()}));
+                                return API.sendChat(subChat(basicBot.chat.chantagem, {nameto: user.username, namefrom: chat.un, chantagear: this.getChantagear()}));
                             }
                         }
                     }
@@ -1733,7 +1733,7 @@ punirCommand: {
                 command: 'punir',
                 rank: 'user',
                 type: 'startsWith',
-                punicao: [
+                punirs: [
                     'te puniu com um boquete da Dilma',
 					'te puniu com um estrangulamento de cabeça de piroca.',
                     'te puniu com 5 dias sem sexo',
@@ -1745,8 +1745,8 @@ punirCommand: {
 					
                 ],
                 getPunir: function () {
-                    var c = Math.floor(Math.random() * this.punicao.length);
-                    return this.punicao[c];
+                    var c = Math.floor(Math.random() * this.punirs.length);
+                    return this.punirs[c];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1769,7 +1769,7 @@ punirCommand: {
                                 return API.sendChat(subChat(basicBot.chat.selfpunir, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.bater, {nameto: user.username, namefrom: chat.un, punir: this.getPunir()}));
+                                return API.sendChat(subChat(basicBot.chat.punir, {nameto: user.username, namefrom: chat.un, punir: this.getPunir()}));
                             }
                         }
                     }
