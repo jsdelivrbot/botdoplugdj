@@ -193,7 +193,7 @@
             botName: "BotBabaca",
             language: "portuguese",
             chatLink: "https://raw.githubusercontent.com/rafaell320/botdoplugdj/master/lang/pt.json",
-            maximumAfk: 120,
+            maximumAfk: 110,
             afkRemoval: true,
             maximumDc: 60,
             bouncerPlus: true,
