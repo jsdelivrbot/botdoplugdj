@@ -191,7 +191,7 @@
         retrieveFromStorage: retrieveFromStorage,
         settings: {
             botName: "BotBabaca",
-            language: "",
+            language: "french",
             chatLink: "https://raw.githubusercontent.com/rafaell320/botdoplugdj/master/lang/pt.json",
             maximumAfk: 110,
             afkRemoval: true,
