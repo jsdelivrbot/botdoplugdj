@@ -174,7 +174,7 @@
         return m;
     };
 
-    var botCreator = "Matthew aka. Yemasthui";
+    var botCreator = "Minha rola fez isso bugado";
     var botCreatorIDs = [];
 
     var basicBot = {
