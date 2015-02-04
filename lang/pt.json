@@ -4,7 +4,7 @@
 	"datarestored": "Dados armazenados anteriormente recuperados com êxito.",
     	"greyuser": "Apenas Seguranças ou superiores podem usar o chatbot.",
     	"bouncer": "O chatbot não pode mover pessoas na fila de espera quando usado por um bouncer.",
-	 "online": "/me %%BOTNAME%% v%%VERSION%% chegou pra abalar!",
+	"online": "/me %%BOTNAME%% v%%VERSION%% chegou pra abalar!",
 
 
     "welcome": "Bem vindo seu gostosão, %%NAME%%",
@@ -16,7 +16,7 @@
 
 
     "isopen": "/me RODA A RODA CARAAAIO Use !join para ganhar um pepino azul!",
-    "winnerpicked": "/me AEHOOOOO o @%%NAME%% ganhou a posição %%POSITION%%. Seu sortudo viadinho, todos verão sua bundinha agora."
+    "winnerpicked": "/me AEHOOOOO o @%%NAME%% ganhou a posição %%POSITION%%. Seu sortudo viadinho, todos verão sua bundinha agora.",
 
 
     "alreadyadding": "/me Usuário já está sendo adicionado! Posição desejada alterada para %%POSITION%%.",
@@ -140,6 +140,6 @@
     "voteratio": "/me [@%%NAME%%] @%%USERNAME%% ~ woots: %%WOOT%%, mehs: %%MEHS%%, ratio (w/m): %%RATIO%%.",
     "website": "/me Visite nosso site: %%LINK%%",
     "youtube": "/me [%%NAME%%] Inscreva-se no nosso canal: %%LINK%%",
-    "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M."
+    "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M.",
 
 }
