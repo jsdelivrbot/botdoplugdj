@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://raw.githubusercontent.com/rafaell320/botdoplugdj/master/lang/pt.json", function (json) {
+        $.get("https://raw.githubusercontent.com/rafaell320/botdoplugdj/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -191,7 +191,7 @@
         retrieveFromStorage: retrieveFromStorage,
         settings: {
             botName: "BotBabaca",
-            language: "portuguese",
+            language: "",
             chatLink: "https://raw.githubusercontent.com/rafaell320/botdoplugdj/master/lang/pt.json",
             maximumAfk: 110,
             afkRemoval: true,
