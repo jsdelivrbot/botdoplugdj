@@ -1,10 +1,10 @@
 {
 	"nodatafound": "Dados anteriores não encontrados.",
-    "retrievingdata": "Recuperando dados armazenados anteriormente.",
-    "datarestored": "Dados armazenados anteriormente recuperados com êxito.",
-    "greyuser": "Apenas Seguranças ou superiores podem usar o chatbot.",
-    "bouncer": "O chatbot não pode mover pessoas na fila de espera quando usado por um bouncer.",
-    "online": "/me %%BOTNAME%% v%%VERSION%% chegou pra abalar!",
+	"retrievingdata": "Recuperando dados armazenados anteriormente.",
+	"datarestored": "Dados armazenados anteriormente recuperados com êxito.",
+    	"greyuser": "Apenas Seguranças ou superiores podem usar o chatbot.",
+    	"bouncer": "O chatbot não pode mover pessoas na fila de espera quando usado por um bouncer.",
+	 "online": "/me %%BOTNAME%% v%%VERSION%% chegou pra abalar!",
 
 
     "welcome": "Bem vindo seu gostosão, %%NAME%%",
