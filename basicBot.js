@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/rafaell320/botdoplugdj/master/lang/languages.json", function (json) {
+        $.get("https://cdn.jsdelivr.net/gh/rafaell320/botdoplugdj/lang/languages.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -182,9 +182,9 @@
         status: false,
         name: "BotBabaca",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/rafaell320/botdoplugdj/master/basicBot.js",
+        scriptLink: "https://cdn.jsdelivr.net/gh/rafaell320/botdoplugdj/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/rafaell320/botdoplugdj/master/lang/pt.json",
+        chatLink: "https://cdn.jsdelivr.net/gh/rafaell320/botdoplugdj/lang/pt.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -192,7 +192,7 @@
         settings: {
             botName: "BotBabaca",
             language: "portuguese",
-            chatLink: "https://rawgit.com/rafaell320/botdoplugdj/master/lang/pt.json",
+            chatLink: "https://cdn.jsdelivr.net/gh/rafaell320/botdoplugdj/lang/pt.json",
             maximumAfk: 110,
             afkRemoval: true,
             maximumDc: 60,
